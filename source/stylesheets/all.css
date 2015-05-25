@@ -1,55 +1,216 @@
-@charset "utf-8";
+section#top {
+  width: 81.25em;
+  height: 520px;
+  margin: 0 auto;
+  background: url("https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xpa1/t31.0-8/q85/s2048x2048/1511533_10104439078567840_523514416854082229_o.jpg") no-repeat;
+}
+div#overlay {
 
-body {
-  background: #d4d4d4 url("../images/background.png");
+  background: rgba(211, 84, 0, 0.4);
+  width: 1300px;
+  height: 520px;
+}
+
+section h1 {
+  font-size: 5em;
+  color: black;
   text-align: center;
-  font-family: sans-serif; }
-
-h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
+  padding-top: 3em;
+  margin: 0 auto;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+  font-family: 'Josefin Slab', serif;
+}
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+section h6 {
+  font-size: 1em;
+  color: rgb(44, 62, 80);
+  text-align: center;
+  margin-top: -0.5em;
+  font-family: 'Josefin Slab', serif;
+}
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+section#logo {
+  font-size: 1.3em;
+  text-align: left;
+  display: inline;
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
+}
+
+section ul{
+  list-style: none;
+}
+
+section ul li {
+  font-size: 1.3em;
+  text-align: right;
+  float: right;
+  text-decoration: none;
+  padding-right: 2em;
+  padding-top: 1em;
+  font-family: 'Maven Pro', sans-serif;
+  color: rgb(44, 62, 80);
+}
+
+article {
+  display: block;
+  float:  left;
+  width: 660px;
+  height: 900px;
+  padding-left: 90px;
+  background-color: orange;
+  color: rgb(44, 62, 80);
+
+
+}
+
+article h3 {
+  font-size: 3em;
+  text-align: left;
+  color: white;
+  font-family: 'Josefin Slab', serif;
+}
+
+article p {
+
+  font-size: 0.8em;
+  line-height: 2em;
+  font-family: 'Maven Pro', sans-serif;
+  color: rgb(44, 62, 80);
+
+}
+
+article blockquote {
+  font-size: 2em;
+  color: rgb(44, 62, 80);
+}
+
+article button {
+  background-color: grey;
+  font-size: 1.5em;
+  margin-left: 1em;
+  text-align: center;
+  color: white;
+}
+
+aside {
+  width: 530px;
+  height: 900px;
+  display: block;
+  float: left;
+  background-color: purple;
+
+}
+
+
+aside div#personal_info{
+  width: 280px;
+  height: 230px;
+  margin-top: 60px;
+  margin-left: 90px;
+  background-color: green;
+}
+
+aside div#personal_info img{
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  margin-left: 95px;
+}
+
+aside div#personal_info h5{
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  color:  rgb(44, 62, 80);
+  font-family: 'Josefin Slab', serif;
+
+}
+
+aside div#personal_info ul{
+  list-style: none;
+
+
+
+}
+
+aside div#personal_info ul li a{
+  font-size: 1em;
+  text-align: center;
+  display: inline;
+  color: white;
+  font-family: 'Josefin Slab', serif;
+  float: left;
+  padding-left: 0.5em;
+  margin: auto;
+}
+
+aside a:link {
+  text-transform: none;
+  text-decoration: none;
+
+}
+
+aside div#personal_info ul li a:visited {
+  color: rbg(44, 62, 80);
+}
+
+aside div#ad{
+  width: 280px;
+  height: 350px;
+  float: right;
+  margin-right: 160px;
+  background-color: pink;
+
+}
+
+aside div#ad img{
+  width: 280px;
+  height: 300px;
+}
+
+aside div#ad a{
+  float: right;
+  font-size: 1em;
+  color: grey;
+  font-family: 'Josefin Slab', serif;
+  text-decoration: underline;
+}
+
+aside div#sidebar_heading {
+  width: 280px;
+  height: 250px;
+  float: right;
+  margin-right: 160px;
+  background-color: yellow;
+}
+
+aside div#sidebar_heading h4{
+  font-size: 1.5em;
+  font-family: 'Josefin Slab', serif;
+  color: white;
+
+}
+
+aside div#sidebar_heading p{
+  font-size: 0.75em;
+  color: grey;
+  font-family: 'Josefin Slab', serif;
+  line-height: 1.5em;
+}
+
+
+div#popular_posts {
+  border-top: 1px solid grey;
+  height: 150px;
+  width: 1300px;
+  background-color: brown;
+  display: block;
+  overflow: auto;
+}
+
+div#popular_posts h1{
+  text-align: center;
+  font-size: 4em;
+  font-family: 'Josefin Slab', serif;
+  color: white;
 }
