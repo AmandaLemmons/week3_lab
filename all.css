@@ -112,7 +112,15 @@ article p {
   line-height: 1.5em;
   font-family: 'Maven Pro', sans-serif;
   color: rgb(44, 62, 80);
+}
 
+article p a {
+  text-decoration: underline;
+  color: grey;
+}
+
+article p a:hover {
+  color: #2980B9;
 }
 
 article blockquote {
@@ -123,25 +131,12 @@ article blockquote {
   padding: 1em;
 }
 
-article button.grey {
-  background-color: grey;
+article button {
   font-size: 1em;
   margin-left: 1.5em;
   padding-left: 1em;
   padding-right: 1em;
   text-align: center;
-  color: white;
-  font-family: 'Maven Pro', sans-serif;
-}
-
-
-article button.blue {
-  background-color: #2980B9;
-  font-size: 1em;
-  margin-left: 1.5em;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
   color: white;
   font-family: 'Maven Pro', sans-serif;
 }
@@ -246,10 +241,18 @@ aside div#sidebar_heading p{
   font-weight: lighter;
 }
 
+aside div#sidebar_heading p a {
+  text-decoration: underline;
+  color: grey;
+}
+
+aside div#sidebar_heading  p a:hover {
+  color: #2980B9;
+}
+
 
 div#popular_posts {
   border-top: 1px solid grey;
-  /*height: 150px;*/
   width: 1300px;
   display: block;
   overflow: auto;
